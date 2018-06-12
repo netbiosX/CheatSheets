@@ -16,3 +16,13 @@ kerberos::list /export
 ```
 kerberos::ptt PENTESTLAB.kirbi
 ```
+# Empire
+
+**SPN Discovery**
+```
+usemodule situational_awareness/network/get_spn
+```
+**Kerberoast**
+```
+usemodule credentials/invoke_kerberoast
+```
